@@ -1,0 +1,518 @@
+/* 
+EyeCandyCinemas
+Author: Dwain Aiolupotea
+Date: 29/06/2021
+*/
+
+/* border box all elements */
+* {
+   box-sizing: border-box;
+}
+
+/* main body styles */
+body {
+   min-height: 100vh;
+   margin: 0;
+   padding: 0;
+   font-size: 16px;
+   line-height: 1.5em;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    margin: 5em auto; 
+}
+
+article {
+    margin: 5rem auto;
+    width: 90%;
+}
+
+section {
+    margin: 5em 2em;
+}
+
+/* navigation styles */
+  
+#nav-bar ul {
+    margin: 0;
+}
+
+#nav-bar ul li {
+    margin: 1.8em 1.5em 0 0;
+    list-style: none;
+    display: inline-block;
+}
+
+#nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav-bar a:hover {
+    color: rgb(158, 158, 158);
+}
+
+#nav-bar input {
+    padding: 0.6em;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0;
+}
+
+a#selected{
+    color: red;
+}
+
+/* logo */
+#logo-top {
+    flex: 1;
+    width: 5em;
+    padding: 0.7em;
+    margin: 0;
+}
+
+/* header flex box */
+header {
+    display: flex;
+    color: white;
+    background-color: black;
+}
+
+header {
+    top: 0;
+    width: 100%;
+}
+
+#title {
+    flex: 1;
+    margin: 0.8em;
+    padding: 0;
+}
+
+.name-logo {
+    color: red;
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, rgb(255, 187, 0), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#nav-bar {
+    flex: 2;
+}
+
+/* banner index feature */
+.banner1 {
+    margin: 0;
+    padding: 0;
+    /* image is from https://cdn.eventcinemas.co.nz/cdn/resources/movies/15345/images/skin.jpg */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/fast-furious-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 700px;
+  
+/* parallax Scrolling */
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* banner cinema feature */
+.banner2 {
+    margin: 0;
+    padding: 0;
+    /* image is from https://cdn.eventcinemas.co.nz/cdn/resources/movies/14967/images/skin.jpg */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/quiet-place-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 700px;
+  
+/* parallax Scrolling */
+background-attachment: fixed;
+background-position: center;
+}
+
+.banner3 {
+    margin: 0;
+    padding: 0;
+    /* image is from https://cdn.eventcinemas.co.nz/cdn/resources/movies/15282/images/skin.jpg */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/hitmans-wifes-bodyguard-skin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 700px;
+  
+/* parallax Scrolling */
+background-attachment: fixed;
+background-position: center;
+}
+
+.banner4 {
+    margin: 0;
+    padding: 0;
+    /* image is from https://cdn.eventcinemas.co.nz/cdn/resources/movies/14964/images/skin.jpg */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/in-the-heights-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 700px;
+  
+/* parallax Scrolling */
+background-attachment: fixed;
+background-position: center;
+}
+
+.banner5 {
+    margin: 0;
+    padding: 0;
+    /* image is from https://cdn.eventcinemas.co.nz/cdn/resources/movies/15348/images/skin.jpg */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/tom-and-jerry-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 700px;
+  
+/* parallax Scrolling */
+background-attachment: fixed;
+background-position: center;
+}
+
+.banner6 {
+    margin: 0;
+    padding: 0;
+    /* image is from https://cdn.eventcinemas.co.nz/cdn/resources/movies/16206/images/skin.jpg */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/bye-bye-morons-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 700px;
+  
+/* parallax Scrolling */
+background-attachment: fixed;
+background-position: center;
+}
+
+
+#hook {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 5em;
+    font-size: 3.3em;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#arrow {
+    position:absolute;
+    padding-top: 10rem;
+    left: 50%;
+    width: 2.5rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#arrow {
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* movies list section */
+
+.container {
+    display: flex;
+}
+
+section h2 {
+    font-size: 2em;
+}
+
+.container div img {
+    width: 100%;
+    height: auto;
+    margin: 0.6rem;
+    border-radius: 5px;
+}
+
+.container div {
+    margin: 0.2em;
+}
+
+.container p {
+    text-align: center;
+    font-size: 0.9em;
+    padding-left: 1em;
+}
+
+.button {
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.5em 0 0 3.5em;
+  cursor: pointer;
+}
+
+.button {
+    width: 150px;
+    padding: 1em;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(58, 58, 58);
+}
+
+.container button a {
+    background-color: black;
+    text-decoration: none;
+}
+
+/* cinema */
+.flex-cinema {
+    display: flex;
+    padding: 3em;
+    line-height: 1.5em;
+}
+
+.flex-cinema h2 {
+    padding-right: 0.3em;
+    line-height: 1.2em;
+}
+
+iframe {
+    border-radius: 10px;
+    height: 25em;
+    width: 70%;
+}
+
+.contact-button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.5em 0 2em 0;
+    cursor: pointer;
+  }
+
+  .contact-button {
+    width: 150px;
+    padding: 1em;
+}
+
+/* movie schedule */
+
+div.schedule, table img {
+    width: 8em;
+}
+
+div.schedule {
+    margin: auto;
+    width: 960px;
+}
+
+table, th, td {
+    padding: 30px; 
+    border: 1px solid #ffffff;
+    color: rgb(0, 0, 0);
+    }
+   
+  table { 
+    border-collapse: collapse;
+    text-align: right;
+    }
+  
+  th {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    }
+  
+  tr:nth-child(even) { 
+    background-color: rgb(243, 243, 243);
+    }
+  
+  tr:nth-child(odd) {
+    background-color: rgb(231, 231, 231);
+    }
+  
+  .body>:hover {
+    background-color: rgb(207, 207, 207);
+    color: rgb(129, 129, 129);
+    }
+
+/* footer */
+footer {
+    margin: 0;
+}
+#footer-menu {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+#footer-menu div {
+    padding: 5em;
+    margin: 0 auto;
+}
+
+#sticky-footer {
+    position: sticky;
+    top: 100%;
+    color: white;
+    background-color: rgb(24, 24, 24);
+}
+
+.logo-bottom {
+    width: 4em;
+    padding: 0.7em;
+    margin: 0;
+}
+
+.bottom {
+    display: flex;
+    background-color: black;
+}
+
+#cinema-menu {
+    flex: 1;
+    flex-direction: column;
+}
+
+#sticky-footer a {
+    color:rgb(247, 247, 247);
+    width: 100px;
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+}
+
+#sticky-footer a:hover {
+    color:red;
+    text-decoration: none;
+    display: block;
+}
+
+#movie-menu {
+    flex: 1;
+}
+
+#about-menu {
+    flex: 1;
+}
+
+#bottom-menu {
+padding: 1em 0;
+position: absolute;
+left: 50%
+}
+
+/* privacy policy */
+#bottom-menu ul, li {
+    list-style-type: none;
+}
+
+div.privacy {
+    margin: auto;
+    width: 960px;
+}
+
+div.privacy h1 {
+    font-size: 2.1em;
+}
+
+div.privacy h2 {
+    font-size: 1.4em;
+}
+
+.privacy ul li {
+    list-style-type: disc;
+}
+
+.feature-area {
+    background-color: black;
+    height: 400px;
+}
+
+/* Now showing page */
+.flex-showing {
+    display: flex;
+}
+
+div.flex-showing {
+    margin: auto;
+    width: 960px;
+}
+
+.flex-showing div {
+    margin: 1em;
+}
+
+/* Contact page */
+div.contact {
+    margin: auto;
+    width: 960px;
+}
+
+/* 
+ATTRIBUTE SELECTORS
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+
+CSS FORMS
+https://www.w3schools.com/css/css_form.asp#:~:text=If%20you%20only%20want%20to,will%20only%20select%20number%20fields
+*/
+
+#contact-form {
+    margin: 0 auto 5em auto;
+    width: 70%;
+}
+
+#contact-form input[type=text],
+input[type=email],
+select, 
+textarea {
+  margin: 6px 0 16px 0;
+  box-sizing: border-box;
+  width: 99%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+fieldset {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+  }
+
+  input[type=submit], input[type="reset"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  input[type=submit]:hover, input[type="reset"]:hover {
+    background-color: #45a049;
+  }
+
+  #thanks {
+      text-align: center;
+  }

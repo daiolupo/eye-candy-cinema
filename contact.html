@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact | eyecandycinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+    <header id="container">
+        <a href="index.html"><img id="logo-top" src="images/eye-cinema-logo-yellow.png" alt="Eye Candy Cinema logo"></a>
+        <a class="name-logo" href="index.html"><h1 id="title">Eye Candy Cinemas</h1></a>
+        <nav id="nav-bar" role="navigation">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="cinema.html">cinema</a></li>
+                <li><a href="schedule.html">schedule</a></li>
+                <li><a href="nowshowing.html">now showing</a></li>
+                <li><a href="comingsoon.html">coming soon</a></li>
+                <li><a href="contact.html" id="selected">contact</a></li>
+                <input type="text" value="search" placeholder="search">
+            </ul>
+        </nav>
+    </header>
+    <div class="banner6">
+        <h1 id="hook">Get in Touch</h1>
+        <a href="#contact"><img id="arrow" src="images/downarrow.png" alt="down arrow"></a>
+    </div>
+        <article id="contact">
+            <section>
+            <div class="contact">
+                <form id="contact-form" action="thankyou.html">
+                    <h2>Contact Us</h2>
+                    <fieldset>
+                      <div>
+                        <label for="name" id="name-label">Name:</label>
+                        <input id="name" type="text" placeholder="Your Name" required>
+                      </div>
+            
+                      <div>
+                        <label for="email" id="email-label">Email:</label>
+                        <input id="email" type="email" placeholder="Your Email" required>
+                      </div>
+            
+                      <div>
+                        <label for="dropdown">Send message to:</label>
+                        <select id="dropdown" required>
+                          <option value="">--Please choose Cinema--</option>
+                              <option value="Afghanistan">Auckland</option>
+                              <option value="Afghanistan">Wellington</option>
+                        </select>
+                      </div>
+            
+                      <div>
+                        <label for="comment">Comment:</label>
+                        <textarea name="story" id="story" cols="30" rows="10" placeholder="Your comment..."></textarea>      
+                      </div>
+                      <input type="submit" id="submit">
+                      <input type="reset" id="reset">
+                      </fieldset>
+                  </form>  
+                <h2 id="about">About Us</h2>
+                <p>Eye Candy Cinemas is a business that started from humble beginnings and we have steadily grown since first establishing ourselves in 2000 and have never looked back. We are always looking to give a quality movie experience and always strive to bring the best genres of movies in Hollywood as well as the small independant films. Come down to Eye Candy Cinemas and relax in our cosy cinemas where we show off the latest and greatest movies out there.</p>
+                <p>Experience our fresh food, drinks and popcorn, enjoy your experience with Eye Candy Cinemas right now.</p>
+                <p>Escape to the best cinemas in Wellington and Auckland!</p>
+            </div>
+            </section>
+        </article>
+        <footer id="sticky-footer">
+            <div id="footer-menu">
+            <div id="cinema-menu">
+            <h3>Cinemas</h3>
+            <a href="cinema.html#auck">Auckland</a>
+            <a href="cinema.html#wgtn">Wellington</a>
+            </div>
+            <div id="movie-menu">
+                <h3>Movies</h3>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="nowshowing.html">Now Showing</a>
+                    <a href="comingsoon.html">Coming Soon</a>
+                </div>
+                <div id="about-menu">
+                    <h3>About</h3>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html#about">Eye Candy</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <img class="logo-bottom" src="images/eye-cinema-logo-white.png" alt="Eye Candy Cinema logo">
+                <h2>Eye Candy Cinemas</h2>
+                    <a href="privacy.html" id="bottom-menu">privacy policy</a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
