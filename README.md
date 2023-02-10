@@ -1,4 +1,4 @@
-# eyecandycinema
+# Eye Candy Cinema
 
 This website was an assignment for my Diploma in Software Development at Whitecliffe technology and innovation 2021. 
 
